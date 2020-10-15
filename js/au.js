@@ -12,4 +12,19 @@ export default class AU {
     resetForm() {
         document.getElementById('new-user-form').reset();
     }
+    addApi(user){
+        var url = 'https://matter-app.herokuapp.com/api/v1/users';
+        var data = {name: user.name,
+                    email: user.email};
+    
+        fetch(url, {
+        method: 'POST', // or 'PUT'
+        body: JSON.stringify(data), // data can be `string` or {object}!
+        headers:{
+            'Content-Type': 'application/json'
+        }
+        }).then(res => res.json())
+        .catch(error => alert('Error try again, (use another email)'))
+        .then(response => alert('User register, please loggion session'));
+        }
 }

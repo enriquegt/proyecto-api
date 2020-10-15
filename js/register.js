@@ -6,12 +6,16 @@ document.getElementById('new-user-form').addEventListener('submit', (event) => {
     event.preventDefault();
     const name = document.getElementById('name').value;
     const password = document.getElementById('pass').value;
-    const user = new User(name, password);
+    const email = document.getElementById('email').value;
+    const user = new User(name, password, email);
     console.log(user);
     
     //agregar nuevo usuario
     const start = new AU();
-    start.addUser(user)
+    start.addUser(user);
     start.resetForm();
-
+    //agrega el usuario a la base de datos
+    start.addApi(user);
 })
+
+
