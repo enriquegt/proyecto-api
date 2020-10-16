@@ -15,7 +15,7 @@ export default class AU {
     addApi(user){
         var url = 'https://matter-app.herokuapp.com/api/v1/users';
         var data = {name: user.name,
-                    email: user.email,
+                    email: user.email
                     };
     
         fetch(url, {
