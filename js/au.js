@@ -16,7 +16,7 @@ export default class AU {
         var url = 'https://matter-app.herokuapp.com/api/v1/users';
         var data = {name: user.name,
                     email: user.email,
-                    password: user.password};
+                    };
     
         fetch(url, {
         method: 'POST', // or 'PUT'
