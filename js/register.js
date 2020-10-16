@@ -5,9 +5,9 @@ import AU from './au.js'
 document.getElementById('new-user-form').addEventListener('submit', (event) => {
     event.preventDefault();
     const name = document.getElementById('name').value;
-    const password = document.getElementById('pass').value;
+    // const password = document.getElementById('pass').value;
     const email = document.getElementById('email').value;
-    const user = new User(name, password, email);
+    const user = new User(name, email);
     console.log(user);
     
     //agregar nuevo usuario
