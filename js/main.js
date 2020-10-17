@@ -3,7 +3,7 @@ import Perfil from './perfil.js'
 import API from './api.js'
 
 
-const user = localStorage.getItem('name')
+const user = localStorage.getItem('email')
 
 if (!user){
     window.location.href = "./index.html"
