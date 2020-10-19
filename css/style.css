@@ -6,13 +6,13 @@
     box-sizing: border-box;
 }
 
-body {
+.body-login {
     background: url(../img/Web-Background.jpg);
     font-family: "Montserrat", sans-serif;
     background-repeat: no-repeat;
 }
 
-h1 {
+.h1-login {
     color: white;
 }
 

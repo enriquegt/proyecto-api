@@ -2,7 +2,7 @@ export default class Perfil {
     addPerfil(user) {
         const container = document.getElementById('user-perfil');
         container.innerHTML += `
-        <img class="card-img-top" src="img/1.png" alt="">
+        <img class="card-img-top" src="img/1.png" alt="profile photo">
           <div class="card-body">
             <h3 class="card-title">${user}</h3>
             <p><a href="./edit-user.html" class="btn btn-primary">Edit User</a></p>
