@@ -6,6 +6,7 @@ export default class Perfil {
           <div class="card-body">
             <h3 class="card-title">${user}</h3>
             <p><a href="./edit-user.html" class="btn btn-primary">Edit User</a></p>
+            </form>
         `;
     }
     editUser(){
@@ -19,7 +20,6 @@ export default class Perfil {
                 <input type="password" class="form-control" id="pwd" placeholder="Password">
               </div>
               <button type="submit" class="btn btn-primary">Confirm</button>
-            </form>
             `
     }
 }
